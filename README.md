@@ -6,13 +6,42 @@
 
 ## Кау установить?
 
-1. Клонируем через git clone
+1. Клонируем репозиторий и переходим в папку с проектом:
 
-``` sh
+```bash
 git clone https://github.com/Microvolna/fractal-generator
+cd fractal-generator
 ```
 
-2. Устанавливаем зависимости из requirements.txt
+2. Устанавливаем зависимости и запускаем проект:
+
+<details>
+    <summary>Через uv (рекомендуется)</summary>
+
+Устанавливаем `uv` (если еще не установлен):
+
+Linux:
+
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+Windows:
+
+```bash
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
+
+Запускаем:
+
+```bash
+uv run bot.py
+```
+</details>
+
+
+<details>
+    <summary>Через requirements.txt</summary>
 
 ``` sh
 pip install -r requirements.txt
@@ -29,6 +58,7 @@ python -m pip install -r requirements.txt
 ``` sh
 python main.py
 ```
+</details>
 
 ## Структура проекта
 
